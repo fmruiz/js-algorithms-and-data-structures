@@ -13,4 +13,7 @@
  * 4) - It is very important because the goal of the Big O Notation is to identify
  * And compare between algorithms to discover who is more efficient
  * If we talk about resources and execution time
+ *
+ * 5) - Can give us a high level understanding of the time or space
+ * complexity of an algorithm
  */
