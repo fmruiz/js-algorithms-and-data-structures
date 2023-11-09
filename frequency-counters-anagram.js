@@ -52,3 +52,35 @@ function anagram(firstWord, secondWord) {
 
     return true;
 }
+
+/**
+ * Anagram fn with different approach
+ */
+function secondAnagram(firstWord, secondWord) {
+    if (firstWord.length !== secondWord.length) {
+        return false;
+    }
+
+    const lookup = {};
+
+    for (let i = 0; i < firstWord.length; i++) {
+        let letter = firstWord[i];
+
+        /**
+         * If letter exists, increment or set to 1
+         */
+        lookup[letter] ? (lookup[letter] += 1) : (lookup[letter] = 1);
+    }
+
+    for (let i = 0; i < secondWord.length; i++) {
+        let letter = secondWord[i];
+
+        if (!lookup[letter]) {
+            return false;
+        } else {
+            lookup[letter] -= 1;
+        }
+    }
+
+    return true;
+}

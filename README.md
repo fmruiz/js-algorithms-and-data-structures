@@ -18,6 +18,10 @@
 
 - Look back and refactor
 
+## Frequency Counters
+
+- This is useful in algorithms challenges when you have multiple pieces of data, multiple inputs and you need compare then
+
 ## FAQ
 
 #### What is an algorithm?
