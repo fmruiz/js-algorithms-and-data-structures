@@ -31,7 +31,7 @@ function same(firstArr, secondArr) {
 }
 
 /**
- * Refactored with time complexity O(n)
+ * Refactored with time complexity BigO(n)
  */
 
 function sameRefactored(firstArr, secondArr) {
